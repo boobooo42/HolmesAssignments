@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="scripts/objects.js"></script>
+</head>
+<body>
+    <a href="index.html">Home</a>
+    <style>
+        #ulSteps, #ulButtons {
+            float: left;
+        }
+
+        #partOne, #partTwo {
+            clear: left;
+        }
+
+        table tr:nth-child(2n+1) {
+            background-color: #DDD;
+        }
+
+        table tr:nth-child(5n+1) td:first-child {
+            background-color: #FA0;
+        }
+    </style>
+    <section id="partOne">
+        <h1>Using Objects with a prototype:</h1>
+        <ol id="ulSteps">
+            <li><button onclick="fillTableWithData();">1. Fill Table from Array</button></li>
+            <li><button onclick="changeParts();">2. Change Parts</button></li>
+            <li><button onclick="fillTableWithData();">3. Fill Table from Array Again</button></li>
+            <li><button onclick="changeBasePart();">4. Change BasePart Quantity to 543</button></li>
+            <li><button onclick="fillTableWithData();">5. Fill Table from Array</button></li>
+        </ol>
+        <table id="tblParts">
+            <tr> <th>ID</th> <th>Name</th> <th>Color</th> <th>Quantity</th> </tr>
+        </table>
+    </section>
+    <section id="partTwo">
+        <h1>Using Objects from a function:</h1>
+        <ul id="ulButtons">
+            <li><button id="btn_0">See Person at 0</button></li>
+            <li><button id="btn_1">See Person at 1</button></li>
+            <li><button id="btn_2">See Person at 2</button></li>
+            <li><button id="btn_3">See Person at 3</button></li>
+            <li><button id="btn_4">See Person at 4</button></li>
+            <li><button id="btn_5">See Person at 5</button></li>
+        </ul>
+        <div id="divOutPut"></div>
+    </section>
+</body>
+</html>

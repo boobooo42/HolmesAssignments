@@ -1,0 +1,88 @@
+﻿body { 
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    padding: 10px;
+}
+
+/*generic styles*/
+p{
+    padding: 2ex;
+}
+span{
+    color: green;
+}
+
+a{
+    color: #FF8800;
+}
+a:hover{
+    color: #888888;
+}
+
+span .selected { color:#FF0000;}
+.selected {color:#008000;}
+section span.selected{color:#000080;}
+
+
+/*header styles*/
+h1{
+    font-size: 2em;
+    color: #FF8800;
+}
+
+h2{
+    font-size: 1.8em;
+    color: #888888;
+}
+
+h3{
+    font-size: 1.6em;
+}
+
+/*table styles*/
+th{
+    background-color: #FF8800;
+    text-align:center;
+    color: #FFFFFF
+}
+
+tr{
+    font-size: .9em;
+    background-color: #EEEEEE;
+}
+
+/*added padding because table was hard to read*/
+th, td{
+    padding: 10px;
+}
+
+.other{
+    background-color: #DDDDDD;
+}
+
+/*Class styles*/
+.success, .error, .warning{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #AAAAAA;
+    font-weight: bold;
+    padding: .3em;
+    margin: .3em;
+}
+
+.success{
+    color: #008800;
+    background-color: #F0FFF0;
+    border-color: #008800;
+}
+
+.warning{
+    color: #888800;
+    background-color: #FFFFF0;
+    border-color: #888800;
+}
+
+.error{
+    color: #880000 ;
+    background-color: #FFF0F0;
+    border-color: #880000;
+}
